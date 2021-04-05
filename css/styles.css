@@ -1,3 +1,11 @@
-#washingtonInfo {
-  display: none;
+body {
+  text-align: center;
+}
+
+.jumbotron {
+  background-color: aquamarine;
+}
+
+.pointer {
+  cursor: pointer;
 }
