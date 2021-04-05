@@ -16,8 +16,30 @@ $(document).ready(function () {
   $("#Washington").click(function () {
     $("#washingtonInfo").slideToggle()
     $("#washingtonInfo").html(`${Washington.city}, ${Washington.landmarks}, ${Washington.timeOfYear}`);
-    
+  })
+  $("#Oregon").click(function () {
+    $("#oregonInfo").slideToggle()
+    $("#oregonInfo").html(`${Oregon.city}, ${Oregon.landmarks}, ${Oregon.timeOfYear}`);
+  })
+  
+  $("#Hawaii").click(function () {
+    $("#hawaiiInfo").slideToggle()
+    $("#hawaiiInfo").html(`${Hawaii.city}, ${Hawaii.landmarks}, ${Hawaii.timeOfYear}`);
+  })
+
+  $("#California").click(function () {
+    $("#californiaInfo").slideToggle()
+    $("#californiaInfo").html(`${California.city}, ${California.landmarks}, ${California.timeOfYear}`);
+  })
+
+  $("#Illinois").click(function () {
+    $("#illinoisInfo").slideToggle()
+    $("#illinoisInfo").html(`${Illinois.city}, ${Illinois.landmarks}, ${Illinois.timeOfYear}`);
+  })
+
+  $("#Colorado").click(function () {
+    $("#coloradoInfo").slideToggle()
+    $("#coloradoInfo").html(`${Colorado.city}, ${Colorado.landmarks}, ${Colorado.timeOfYear}`);
+  })
     event.preventDefault();
   });
-});
-
