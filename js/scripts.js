@@ -11,11 +11,13 @@ let California = new States ("San Diego", ["Balboa Park", "Seaworld"], "2017")
 let Illinois = new States ("Chicago", ["The Bean", "Museum of Art"], "2015");
 let Colorado = new States("Boulder", ["Mountain1", "Mountain2"], "2022");
 
-$(document).ready(function(){
-  $("form#stateForm").click(function(event) {
-  $("#Washington").html(States); 
-}
-)}
-)
 
+$(document).ready(function () {
+  $("#Washington").click(function () {
+    $("#washingtonInfo").slideToggle()
+    $("#washingtonInfo").html(`${Washington.city}, ${Washington.landmarks}, ${Washington.timeOfYear}`);
+    
+    event.preventDefault();
+  });
+});
 
